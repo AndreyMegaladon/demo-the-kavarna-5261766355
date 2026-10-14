@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu & Nabídka | The Kavárna</title>
+    <style>
+        :root {
+            --primary: #c29b38;
+            --dark: #1a1a1a;
+            --light: #f9f6f0;
+            --accent: #e0b854;
+            --gray: #242424;
+            --text-muted: #b0b0b0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--dark); color: var(--light); line-height: 1.6; }
+        header { background: rgba(26, 26, 26, 0.95); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid rgba(194, 155, 56, 0.2); }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); text-transform: uppercase; letter-spacing: 2px; }
+        .nav-links { display: flex; list-style: none; gap: 30px; }
+        .nav-links a { color: var(--light); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+        .section { padding: 140px 20px 100px 20px; max-width: 900px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 50px; text-transform: uppercase; letter-spacing: 2px; color: var(--primary); }
+        .service-list { display: flex; flex-direction: column; gap: 20px; }
+        .service-item { background: var(--gray); padding: 25px 30px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; border-left: 4px solid var(--primary); }
+        .service-info h3 { font-size: 1.3rem; margin-bottom: 5px; }
+        .service-info p { color: var(--text-muted); font-size: 0.95rem; }
+        .service-price { font-size: 1.2rem; font-weight: bold; color: var(--primary); white-space: nowrap; }
+        @media (max-width: 768px) { .service-item { flex-direction: column; align-items: flex-start; gap: 15px; } .nav-links { display: none; } }
+        footer { background: #111; padding: 40px 20px; text-align: center; border-top: 1px solid rgba(194, 155, 56, 0.2); color: var(--text-muted); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">The Kavárna</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="about.html">O nás</a></li>
+                <li><a href="services.html" class="active">Menu & Nabídka</a></li>
+                <li><a href="contacts.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">Naše Menu & Nabídka</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Espresso & Káva na bázi espressa</h3>
+                    <p>Poctivé espresso, cappuccino, caffe latte a další kávové speciality z čerstvě pražených zrn.</p>
+                </div>
+                <div class="service-price">Dle aktuální nabídky</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Filtrovaná káva (Batch Brew)</h3>
+                    <p>Pravidelně rotující výběrová káva připravená metodou batch brew.</p>
+                </div>
+                <div class="service-price">Dle aktuální nabídky</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Domácí dorty a zákusky</h3>
+                    <p>Každý den čerstvé domácí dorty a sladké pečivo z vlastní produkce.</p>
+                </div>
+                <div class="service-price">Dle aktuální nabídky</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Slané quiche & Sendviče</h3>
+                    <p>Čerstvě připravené slané koláče quiche a obložené sendviče pro skvělou snídani či oběd.</p>
+                </div>
+                <div class="service-price">Dle aktuální nabídky</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Domácí limonády & Čaje</h3>
+                    <p>Osvěžující domácí limonády z čerstvého ovoce a bylinek, výběrové čaje.</p>
+                </div>
+                <div class="service-price">Dle aktuální nabídky</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Česká vína & Aperol</h3>
+                    <p>Výběr kvalitních českých vín, osvěžující Aperol Spritz a další alkoholické nápoje.</p>
+                </div>
+                <div class="service-price">Dle aktuální nabídky</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 The Kavárna, Budečská 974/6, Praha 2 - Vinohrady. Všechna práva vyhrazena.</p>
+    </footer>
+</body>
+</html>
